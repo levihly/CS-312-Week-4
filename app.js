@@ -140,18 +140,15 @@ app.post("/delete", function(req,res) {
         console.log(err);
       });
   }
-
-
-
 });
 
 let port = process.env.PORT;
-if (port == null || port = "") {
-  port = 3000;
+if (port == null || port == "") {
+  port = 8000;
 }
 
 app.listen(port, function() {
-  console.log("Server is running on port" + port);
+  console.log("Server is running.");
 });
 
 module.exports = app;
